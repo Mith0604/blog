@@ -1,76 +1,91 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Gym & Fitness Blog</title>
-    <link rel="icon" href="https://image.flaticon.com/icons/svg/13/13706.svg" type="image/gif" sizes="16x16" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <div class="header-top">
-        <h1>My Gym & Fitness Blog</h1>
-        <!-- Light/Dark Mode Toggle Button -->
-        <button id="mode-toggle">Dark Mode</button>
-      </div>
-      <nav>
-        <ul class="blogs">
-          <li><a href="home">Home</a></li>
-          <li><a href="blog1">Workout Tips</a></li>
-          <li><a href="blog2">Nutrition Advice</a></li>
-          <li><a href="blog3">Gym Routines</a></li>
-          <li><a href="#contact-footer">Contact</a></li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Gym & Lifestyle Blog</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <h1>My Gym & Lifestyle Blog</h1>
+    <button id="theme-toggle" aria-label="Toggle Theme">🌙</button>
+  </div>
+
+  <nav>
+    <ul class="nav-menu">
+      <li class="dropdown">
+        <a href="#">Explore ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">Workouts</a></li>
+          <li><a href="index.html">Nutrition</a></li>
+          <li><a href="index.html">Lifestyle</a></li>
         </ul>
-      </nav>
-    </header>
-    <hr />
-    <div class="search-container">
-      <input type="text" id="searchbar" placeholder="Search gym posts..." />
-      <button type="submit" id="searchButton">Search</button>
+      </li>
+      <li><a href="#contact-footer">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Build Strength. Build Discipline. Build Life.</h2>
+      <p>
+        Fitness is a lifestyle — combining workouts, nutrition, recovery,
+        mindset, and consistency to create long-term results.
+      </p>
     </div>
-    
-    <main>
-      <!-- Blog Section 1 -->
-      <section class="blog">
-        <div class="blog-header">
-          <img src="assets/img1.jpg" alt="Gym Image">
-          <div class="blog-content">
-            <h4>Ultimate Gym Workout</h4>
-            <p>
-              Discover effective gym workout routines to boost your strength and endurance. From weight training to cardio sessions, learn tips to maximize your fitness potential.
-            </p>
-            <div class="blog-meta">
-              <span class="date">1-3-2024</span>
-              <span class="read-time">3 min read</span>
-            </div>
-          </div>
-        </div>
-        <!-- Comments Section -->
-        <div class="comments">
-          <h3>Comments</h3>
-          <div class="comment-list"></div>
-          <button class="see-more" style="display: none;">See More</button>
-          <form class="comment-form">
-            <input type="text" name="name" placeholder="Your Name" required />
-            <textarea name="comment" placeholder="Your Comment" required></textarea>
-            <button type="submit">Submit</button>
-          </form>
-        </div>
-      </section>
-    </main>
-    <footer id="contact-footer">
-      <div class="footer-container">
-        <h2>Contact Us</h2>
-        <p>Stay connected with us through social media!</p>
-        <div class="social-links">
-          <a href="https://instagram.com" target="_blank">Instagram</a>
-          <a href="mailto:email@example.com" target="_blank">Email</a>
-          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-        </div>
-        <p class="copyright">&copy; 2024 My Gym & Fitness Blog. All rights reserved.</p>
-      </div>
-    </footer>    
-    <script src="script.js"></script>
-  </body>
+    <img src="assets/gym1.jpg" alt="Gym Motivation">
+  </section>
+
+  <!-- BLOG POST -->
+  <section class="blog">
+    <img src="assets/gym2.jpg" alt="Workout Routine">
+    <div class="blog-content">
+      <h3>Ultimate Gym Workout Routine</h3>
+      <p>
+        Focus on compound movements like squats, bench press, deadlifts,
+        pull-ups, and overhead presses. These exercises build real strength
+        and functional muscle.
+      </p>
+      <p>
+        Combine strength training with cardio, mobility work, and proper rest
+        for optimal progress.
+      </p>
+    </div>
+  </section>
+
+  <!-- COMMENTS SECTION -->
+  <section class="comments">
+    <h3>Comments</h3>
+
+    <div class="comment-list"></div>
+
+    <form class="comment-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <textarea name="comment" placeholder="Write your comment..." required></textarea>
+      <button type="submit">Post Comment</button>
+    </form>
+  </section>
+
+</main>
+
+<footer id="contact-footer">
+  <h3>Connect With Me</h3>
+  <a class="linkedin-btn"
+     href="https://www.linkedin.com/in/mithun-kumar-bm-2b2208330/"
+     target="_blank">
+     LinkedIn
+  </a>
+  <p>© 2024 My Gym & Lifestyle Blog</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
 </html>
