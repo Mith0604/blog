@@ -1,27 +1,26 @@
-// Theme Toggle
-const toggleBtn = document.getElementById("theme-toggle");
-const body = document.body;
+document.addEventListener("DOMContentLoaded", () => {
 
-toggleBtn.addEventListener("click", () => {
-  body.classList.toggle("dark");
-  toggleBtn.textContent = body.classList.contains("dark") ? "☀️" : "🌙";
+    const emailBtn = document.querySelector(".email-btn");
+
+    if (emailBtn) {
+        emailBtn.addEventListener("click", sendMail);
+    }
+
 });
 
-// Comment System
-const form = document.querySelector(".comment-form");
-const commentList = document.querySelector(".comment-list");
+function sendMail() {
 
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
+    const email = "mithunbm6@gmail.com";
+    const subject = encodeURIComponent("Opportunity Inquiry");
+    const body = encodeURIComponent(
+        `Hi Mithun,
 
-  const name = form.name.value.trim();
-  const comment = form.comment.value.trim();
+I came across your portfolio and would like to discuss a potential opportunity.
 
-  if (!name || !comment) return;
+Best regards,`
+    );
 
-  const p = document.createElement("p");
-  p.innerHTML = `<strong>${name}:</strong> ${comment}`;
-  commentList.appendChild(p);
+    const mailtoLink = `mailto:${email}?subject=${subject}&body=${body}`;
 
-  form.reset();
-});
+    window.location.href = mailtoLink;
+}
