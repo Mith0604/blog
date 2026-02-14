@@ -1,100 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mithun | Portfolio</title>
+  <meta charset="UTF-8">
+  <title>Mithun Lifestyle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="profile_style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="intro-hero">
-        <h1>Hey, I’m Mithun 👋</h1>
-        <p>BCA Graduate | Aspiring Full-Stack Developer</p>
-        <div class="scroll-hint">Scroll down ↓</div>
+<header id="header">
+  <div class="container nav-container">
+    <h1 class="logo">Mithun<span>Life</span></h1>
+    <nav>
+      <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#blogs">Blogs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle">🌙</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content container">
+    <h2>Train Hard. <br>Live Smart. <span>Play Bold.</span></h2>
+    <p>Gym discipline. Football mindset. Lifestyle balance.</p>
+    <a href="#blogs" class="primary-btn">Explore Articles</a>
+  </div>
+</section>
+
+<section id="blogs" class="container blog-grid">
+
+  <div class="blog-card">
+    <img src="assets/gym1.jpg">
+    <div class="blog-text">
+      <h3>Building Strength That Lasts</h3>
+      <p>Structured overload and recovery create sustainable muscle growth.</p>
     </div>
+  </div>
 
-    <section class="section">
-        <h2>About Me</h2>
-        <div class="card">
-            <p>
-                I completed my BCA in 2025 and currently work as a Customer Care Representative.
-                Alongside my professional experience, I am actively building my career in software development.
-                <br><br>
-                I have a strong interest in web development and backend technologies. I enjoy building real-world
-                projects, solving problems, and continuously improving my technical skills.
-                <br><br>
-                My long-term goal is to grow into a senior developer role and contribute meaningfully
-                to impactful software products.
-            </p>
-        </div>
-    </section>
+  <div class="blog-card">
+    <img src="assets/gym2.jpg">
+    <div class="blog-text">
+      <h3>Football Mentality & Discipline</h3>
+      <p>Positioning, resilience, and tactical awareness build leaders.</p>
+    </div>
+  </div>
 
-    <section class="section">
-        <h2>Technical Skills</h2>
-        <div class="projects-grid">
+  <div class="blog-card">
+    <img src="assets/gym1.jpg">
+    <div class="blog-text">
+      <h3>Lifestyle Optimization</h3>
+      <p>Sleep cycles and structured routines separate performers.</p>
+    </div>
+  </div>
 
-            <div class="project-card">
-                <h3>Frontend</h3>
-                <p>HTML5, CSS3, JavaScript (ES6), Responsive Design</p>
-            </div>
+  <div class="blog-card">
+    <img src="assets/gym2.jpg">
+    <div class="blog-text">
+      <h3>Explosive Power Training</h3>
+      <p>Combine agility drills with strength blocks for peak output.</p>
+    </div>
+  </div>
 
-            <div class="project-card">
-                <h3>Backend</h3>
-                <p>PHP (Basics), Java (Core), MySQL</p>
-            </div>
+</section>
 
-            <div class="project-card">
-                <h3>Tools & Concepts</h3>
-                <p>Git, GitHub, Database Design, Basic DSA, Problem Solving</p>
-            </div>
+<!-- CLEAN CONTACT CTA -->
+<section id="contact" class="contact-cta">
+  <div class="container">
+    <h2>Let’s Connect</h2>
+    <p>Have a question about training, football, or lifestyle systems?</p>
+    <a href="mailto:mithunkumarbm4@gmail.com" class="contact-btn">
+      Send Me a Message →
+    </a>
+  </div>
+</section>
 
-        </div>
-    </section>
+<footer>
+  <div class="container">
+    <p>© 2026 MithunLife | Gym • Football • Lifestyle</p>
+  </div>
+</footer>
 
-    <section class="section">
-        <h2>Projects</h2>
-
-        <div class="projects-grid">
-
-            <div class="project-card">
-                <h3>Personal Portfolio</h3>
-                <p>
-                    A responsive personal portfolio built using HTML, CSS, and JavaScript
-                    to showcase my skills, projects, and technical growth.
-                </p>
-                <a href="https://mith0604.github.io/" target="_blank">
-                    View Project →
-                </a>
-            </div>
-
-            <div class="project-card highlight">
-                <h3>Gym & Lifestyle Blog</h3>
-                <p>
-                    A fitness-focused blog platform designed with a dark theme,
-                    structured layout, and optimized content sections for readability.
-                </p>
-                <a href="https://mith0604.github.io/gym-blog/" target="_blank">
-                    Visit Blog →
-                </a>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="contact">
-        <h2>Contact Me</h2>
-        <p>Open to opportunities in web development and entry-level technical roles.</p>
-        <div class="contact-links">
-            <a href="mailto:mithunbm6@gmail.com">Email Me</a>
-            <a href="https://github.com/Mith0604" target="_blank">GitHub</a>
-            <a href="https://wa.me/9108615909" target="_blank">WhatsApp</a>
-        </div>
-    </section>
-
-    <script src="profile_script.js"></script>
-
+<script src="script.js"></script>
 </body>
 </html>
